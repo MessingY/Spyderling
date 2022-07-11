@@ -130,7 +130,7 @@ class JDSpyderlingController(Spyderling.SpyderlingController):
     def extract_info(self):
         """Extracts info on every page"""
         fieldnames = list(self.custom.keys())
-        f = open("C:/Users/Innov/OneDrive/Desktop/star.csv", 'w', encoding='UTF-8', newline='')  # TODO Modify csv
+        f = open("C:/Desktop/star.csv", 'w', encoding='UTF-8', newline='')  # TODO Modify csv
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         pages = self.get_extent()
