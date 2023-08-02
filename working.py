@@ -20,7 +20,7 @@ driver = webdriver.Chrome(path, options=option)
 
 location_setting = False    # Sets a one-time-use variable, to set the location for the first time
 page_setting = False        # Sets a one-time-use variable, to set the total page number
-keyword = '注意力保健品'            # The keyword that is to be researched
+keyword = 'TODO'            # The keyword that is to be researched
 page_num = 0                # The current page number
 total_page = 100            # Place-holder for the total number of pages
 index = 0                   # The current product number
@@ -32,7 +32,7 @@ fieldnames = [
 ]
 
 """Opening and getting ready the csv file"""
-f = open("C:/Users/Meison Yuan/Desktop/{title}.csv".format(title=file_title), 'w', encoding='UTF-8', newline='')
+f = open("C:/Users/USERNAME/Desktop/{title}.csv".format(title=file_title), 'w', encoding='UTF-8', newline='')
 writer = csv.DictWriter(f, fieldnames=fieldnames)
 writer.writeheader()
 
